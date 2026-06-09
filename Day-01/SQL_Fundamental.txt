@@ -1,0 +1,66 @@
+Fundamentals of SQL Queries
+
+
+Basic SQL Commands
+
+SELECT & FROM
+Used to retrieve data from tables.
+SELECT column_name
+FROM table_name;
+
+WHERE Clause
+Filters records based on conditions.
+SELECT *
+FROM employees
+WHERE salary > 50000;
+
+Comparison Operators
+Operator	Meaning
+=	Equal
+!=	Not Equal
+>	Greater Than
+<	Less Than
+>=	Greater Than or Equal
+<=	Less Than or Equal
+BETWEEN	Range Check
+
+ORDER BY
+
+Sorts query results.
+
+ORDER BY salary DESC;
+ASC → Ascending
+DESC → Descending
+
+LIMIT
+Restricts the number of rows returned.
+LIMIT 10;
+
+DISTINCT
+Returns unique values.
+SELECT DISTINCT city
+FROM customers;
+
+Comments
+-- Single-line comment
+/*
+Multi-line
+comment
+*/
+
+Logical Operators
+ AND
+     WHERE salary > 50000
+     AND location = 'Delhi';
+ OR
+   WHERE department = 'IT'
+   OR department = 'HR';
+ NOT
+   WHERE NOT department = 'Sales';
+
+   
+Pattern Matching with LIKE
+Wildcard	Meaning
+%	Zero or more characters
+_	Single character   
+   
