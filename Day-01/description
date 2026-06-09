@@ -1,0 +1,64 @@
+1. Introduction to SQL and Its Importance
+SQL (Structured Query Language) is the top demand skill in data analytics and widely used across data science, data engineering, and analytics roles.
+SQL queries are used to create, read, update, and delete (CRUD) data in relational databases, essential for data extraction and insights.
+Databases can be relational (structured data in tables) or non-relational (NoSQL, unstructured data in various forms).
+Common relational databases include PostgreSQL, SQLite, MySQL; PostgreSQL is the course emphasis for advanced work.
+2. Fundamentals of SQL Queries
+Basic SQL commands covered:
+
+SELECT, FROM for choosing columns and tables.
+WHERE clause for filtering data using comparison operators (=, !=, >, <, BETWEEN).
+ORDER BY sorts the results ascending or descending.
+LIMIT to restrict row counts.
+Use of DISTINCT to fetch unique values.
+Use of comments in SQL for documenting queries.
+Logical operators: AND, OR, and NOT combine multiple filtering conditions.
+
+Wildcards and pattern matching using LIKE, % (zero or more chars), and _ (single char).
+
+Aliases rename columns and tables for readability, especially important when joining multiple tables.
+
+3. Advanced Query Concepts
+Joins: Combine data from multiple tables.
+
+LEFT JOIN: Return all records from left table plus matching right table rows.
+RIGHT JOIN: Opposite of LEFT JOIN.
+INNER JOIN: Return rows with matching keys in both tables.
+FULL OUTER JOIN: Return all rows when matched or unmatched from both tables (rarely used).
+Aggregation functions:
+
+SUM(), COUNT(), AVG(), MIN(), MAX()
+Combined with GROUP BY to summarize data by categories.
+HAVING filters groups after aggregation (different from WHERE).
+Arithmetic operations within queries for computing new values.
+
+Handling NULL values: Filtering and detecting missing data.
+
+Use of subqueries (nested queries) and Common Table Expressions (CTE) to build modular, reusable temporary tables for complex queries.
+
+UNION and UNION ALL: Concatenate result sets from multiple queries vertically.
+
+UNION removes duplicates.
+UNION ALL includes duplicates.
+4. Working with Dates and Times
+Casting timestamps to dates.
+Using AT TIME ZONE to convert UTC timestamps to local time zones.
+Extract parts of dates (YEAR, MONTH, DAY) using the EXTRACT() function.
+Performing temporal analysis, such as monthly job posting trends.
+5. Setting Up Databases Locally
+Downloading and installing PostgreSQL for a local relational database.
+Using VS Code as the SQL code editor with SQL tools extensions.
+Creating and altering tables with appropriate data types (INT, NUMERIC, VARCHAR, BOOLEAN, TIMESTAMP).
+Loading data from CSV files into tables.
+Managing tables: CREATE, INSERT, ALTER, UPDATE, DROP.
+Best practices for schema design: primary keys, foreign keys, and indexes.
+Hands-On Learning & Capstone Project
+The course provides extensive hands-on SQL query writing with real-world data: job postings dataset of the data science industry from 2023.
+
+Dataset is structured with fact and dimension tables:
+
+Table	Description
+job_postings_fact	Main fact table containing job postings records with unique job ID, company ID, salary, and job details.
+skills_dim	Dimension table listing skill IDs, names, and types.
+skills_job_dim	Linking table associating multiple skills per job posting (many-to-many).
+company_dim	Dimension table with company metadata (name, URL).
